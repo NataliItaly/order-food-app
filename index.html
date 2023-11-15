@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Jimmy’s Diner</h1>
+        <p class="header__subtitle">The best burgers and pizzas in town.</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <ul class="menu"></ul>
+        <div class="checkout hidden">
+          <button class="checkout__close">x</button>
+          <h2 class="checkout__title">Your order</h2>
+          <ul class="checkout__list"></ul>
+          <div class="checkout__total">
+            <span>Total price</span>
+            <span class="checkout__total-sum" id="total"></span>
+          </div>
+          <button class="btn checkout__btn">Complete order</button>
+        </div>
+        <div class="payment hidden" id="payment">
+          <form action="#" class="payment__form">
+            <h2 class="payment__title">Enter card details</h2>
+            <input
+              type="text"
+              class="payment__input"
+              name="card-name"
+              id="card-name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="number"
+              class="payment__input"
+              name="card-number"
+              id="card-number"
+              placeholder="Enter your card number"
+              required
+            />
+            <input
+              type="number"
+              class="payment__input"
+              name="card-cvv"
+              id="card-cvv"
+              placeholder="Enter card CVV"
+              required
+            />
+            <button class="btn payment__btn">Pay</button>
+          </form>
+        </div>
+        <div class="message hidden">Thanks! Your order is on its way!</div>
+      </div>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

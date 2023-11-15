@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background-color: black;
+  font-family: Smythe;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.block {
+  overflow: hidden;
+}
+
+.container {
+  padding: 46px;
+}
+
+.header,
+.main,
+.footer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  color: #fff;
+  background: url("./images/header-bg.png") center / cover;
+}
+
+.header__title {
+  font-size: 39px;
+  line-height: 24px;
+}
+
+.header__subtitle {
+  font-size: 23px;
+}
+
+.main {
+  background-color: #fff;
+}
+
+.menu {
+  margin-bottom: 40px;
+}
+
+.menu__item {
+  display: flex;
+  gap: 30px;
+  padding: 50px 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.menu__btn {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  color: #3c3c3c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 200;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menu__btn:hover {
+  transform: translateY(-2px);
+  background-color: #fff6f6;
+}
+
+.dish__title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.dish__description {
+  color: #8b8b8b;
+  margin-bottom: 8px;
+}
+
+.checkout {
+  padding: 50px 0;
+  color: #000;
+  font-size: 28px;
+  position: relative;
+}
+
+.checkout__close {
+  font-size: 20px;
+  font-family: Verdana;
+  color: #bbb;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 45px;
+  right: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.checkout__close:hover {
+  color: #3c3c3c;
+}
+
+.checkout__title {
+  font-size: inherit;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.checkout__list {
+  border-bottom: 1px solid #393333;
+  margin-bottom: 15px;
+}
+
+.checkout__item {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.checkout__remove {
+  color: #bbb;
+  font-family: Verdana;
+  font-size: 12px;
+  border: none;
+  background-color: transparent;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.checkout__remove:hover {
+  color: #8b8b8b;
+}
+
+.checkout__quantity {
+  color: #bbb;
+  font-family: Verdana;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.checkout__total {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.checkout__total-sum {
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.btn {
+  width: 100%;
+  color: #fff;
+  font-family: Verdana;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 3px;
+  background: #16db99;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1be8a4;
+}
+
+.hidden {
+  display: none;
+}
+
+.payment {
+  position: fixed;
+  bottom: 50px;
+  max-width: 524px;
+  padding: 50px 24px;
+  font-family: Verdana;
+  background-color: #fff;
+  box-shadow: 0 1px 40px rgba(0, 0, 0, 0.5);
+}
+
+.payment__title {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.payment__input {
+  width: 100%;
+  color: #757575;
+  padding: 16px 26px;
+  border: 1px solid #bbb;
+  margin-bottom: 25px;
+}
+
+.message {
+  text-align: center;
+  border-radius: 3px;
+  background: #ecfdf5;
+  color: #065f46;
+  font-size: 32px;
+  padding: 50px 25px;
+}
